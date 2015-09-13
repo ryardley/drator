@@ -1,6 +1,6 @@
 # Drator
 
-Simple API for sending data from the server to the client
+Simple API for sending data from the server to the client mainly so I can get used to publishing to npm.
 
 ## Usage
 
