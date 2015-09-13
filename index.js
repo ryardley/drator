@@ -1,10 +1,13 @@
 module.exports = {
   dehydrate: function(key, data, context){
-    return "window." + key + " = " + JSON.stringify(data);
+    context = context || 'window';
+    return context + '.' + key + ' = ' + JSON.stringify(data);
   },
   hydrate: function(key, context){
 
-    if(typeof window === 'undefined'){
+    window = window || context;
+
+    if(typeof window === 'undefined' || window === null){
       return;
     }
 

@@ -4,7 +4,6 @@
   "description": "Simple Hydration API for sending data between the server and the client",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Error: no test specified' && exit 1",
     "publish:patch": "npm version --patch && git push && npm publish ."
   },
   "repository": {
