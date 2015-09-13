@@ -1,0 +1,14 @@
+{
+  "name": "drator",
+  "version": "0.1.0",
+  "description": "Simple Hydration API for sending data between the server and the client",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ryardley/drator"
+  },
+  "author": "",
+  "license": "ISC"
+}
