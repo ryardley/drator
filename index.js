@@ -1,8 +1,8 @@
 module.exports = {
-  hydrate: function(key, data, context){
+  dehydrate: function(key, data, context){
     return "window." + key + " = " + JSON.stringify(data);
   },
-  dehydrate: function(key, context){
+  hydrate: function(key, context){
     context = context || window;
     if(typeof context === 'undefined'){
       throw new Error("The 'context' object does not exist.")
