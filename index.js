@@ -9,7 +9,7 @@ module.exports = {
     }
 
     if(window[key] === undefined){
-      throw new Error("It looks like the key " + key + " has not been hydrated.")
+      throw new Error("It looks like the key '" + key + "' has not been hydrated.")
     }
 
     var dehydrated = window[key];

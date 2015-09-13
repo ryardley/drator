@@ -4,15 +4,14 @@ Simple API for sending data from the server to the client mainly so I can get us
 
 ## Usage
 
+
+### Simple data sharing
+
 ```js
 // server.js
 import {dehydrate} from 'drator';
 
-const data = {
-  simple: 'object'
-}
-
-const markup = dehydrate('App', data);
+const markup = dehydrate('App', {simple: 'object'});
 
 // 'window.App={"simple":"object"}'
 ```
@@ -25,5 +24,3 @@ const data = hydrate('App');
 
 data.simple; // 'object'
 ```
-
-
