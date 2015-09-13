@@ -1,6 +1,6 @@
 {
   "name": "drator",
-  "version": "0.1.9",
+  "version": "0.1.8",
   "description": "Simple Hydration API for sending data between the server and the client",
   "main": "index.js",
   "scripts": {
