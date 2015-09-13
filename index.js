@@ -4,19 +4,17 @@ module.exports = {
     return context + '.' + key + ' = ' + JSON.stringify(data);
   },
   hydrate: function(key, context){
-
-    window = window || context;
-
-    if(typeof window === 'undefined' || window === null){
+    context = context || window;
+    if(typeof context === 'undefined' || context === null){
       return;
     }
 
-    if(window[key] === undefined){
+    if(context[key] === undefined){
       throw new Error("It looks like the key '" + key + "' has not been hydrated.")
     }
 
-    var dehydrated = window[key];
-    delete window[key];
+    var dehydrated = context[key];
+    delete context[key];
     return dehydrated;
   }
 }
