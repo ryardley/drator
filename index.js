@@ -3,17 +3,17 @@ module.exports = {
     return "window." + key + " = " + JSON.stringify(data);
   },
   hydrate: function(key, context){
-    context = context || window;
-    if(typeof context === 'undefined'){
-      throw new Error("The 'context' object does not exist.")
+
+    if(typeof window === 'undefined'){
+      return;
     }
 
-    if(context[key] === undefined){
-      throw new Error("The key " + key + " does not exist on the given context.")
+    if(window[key] === undefined){
+      throw new Error("It looks like the key " + key + " has not been hydrated.")
     }
 
-    var dehydrated = context[key];
-    delete context[key];
+    var dehydrated = window[key];
+    delete window[key];
     return dehydrated;
   }
 }
