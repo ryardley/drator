@@ -14,7 +14,7 @@ const data = {
 
 const markup = dehydrate('App', data);
 
-// window.App={"simple":"object"}
+// 'window.App={"simple":"object"}'
 ```
 
 ```js
