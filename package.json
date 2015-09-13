@@ -1,12 +1,24 @@
 {
   "name": "drator",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Simple Hydration API for sending data between the server and the client",
   "main": "index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/ryardley/drator"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "drator",
+    "hydration",
+    "flux",
+    "react"
+  ],
+  "author": "Rudi Yardley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryardley/drator/issues"
+  }
 }
